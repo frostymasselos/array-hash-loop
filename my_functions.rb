@@ -5,7 +5,7 @@ end
 def sum_array(numbers)
   total = 0
   for number in numbers
-    total = total + number
+    total += number
   end
   return total
 end
@@ -25,5 +25,5 @@ def is_item_in_array_not(array, item)
 end
 
 def get_first_key(wallets)
-  return wallets.keys(0)
+  return wallets.keys().first()
 end
