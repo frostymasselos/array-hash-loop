@@ -9,3 +9,21 @@ def sum_array(numbers)
   end
   return total
 end
+
+def is_item_in_array(array, item)
+  for house in array
+    if (house == item)
+      return true
+    end
+  end
+  return false
+end
+
+def is_item_in_array_not(array, item)
+  test = is_item_in_array(array, item)
+  return test
+end
+
+def get_first_key(wallets)
+  return wallets.keys(0)
+end
